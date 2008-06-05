@@ -1,15 +1,21 @@
-abstract: A time object, with as little code as possible
-author: Adam Kennedy <adamk@cpan.org>
-build_requires: 
+---
+abstract: 'A time object, with as little code as possible'
+author:
+  - 'Adam Kennedy <adamk@cpan.org>'
+build_requires:
   Test::More: 0.47
 distribution_type: module
-generated_by: Module::Install version 0.64
+generated_by: 'Module::Install version 0.75'
 license: perl
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.3.html
+  version: 1.3
 name: Time-Tiny
-no_index: 
-  directory: 
+no_index:
+  directory:
     - inc
     - t
-requires: 
-  perl: 5.005
-version: 0.01
+requires:
+  Carp: 0
+  overload: 0
+version: 1.02
