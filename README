@@ -4,16 +4,16 @@ NAME
 SYNOPSIS
       # Create a time manually
       $christmas = Time::Tiny->new(
-          year  => 2006,
-          month => 12,
-          day   => 25,
+          hour   => 10,
+          minute => 45,
+          second => 0,
           );
       
   # Show the current time
-      $today = Time::Tiny->now;
-      print "Year : " . $today->year  . "\n";
-      print "Month: " . $today->month . "\n";
-      print "Day  : " . $today->day   . "\n";
+      $now = Time::Tiny->now;
+      print "Hour   : " . $now->hour   . "\n";
+      print "Minute : " . $now->minute . "\n";
+      print "Second : " . $now->second . "\n";
 
 DESCRIPTION
     Time::Tiny is a member of the DateTime::Tiny suite of time modules.
@@ -90,7 +90,7 @@ METHODS
           hour   => 0,
           minute => 0,
           second => 0,
-          );
+      );
 
     The "new" constructor creates a new Time::Tiny object.
 
